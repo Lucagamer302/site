@@ -5,30 +5,32 @@
     <title>Cadastro Rápido</title>
 </head>
 <body>
-     <h1>Cadastro projeto técnologia para todos</h1>
-     <h2>Made by:batata</h2>
+    <h1>Cadastro projeto técnologia para todos</h1>
+    <h2>Made by:batata</h2>
 
-     <form action="#" method="POST">
-         <!-- Nome-->
-         <label for="nome">Nome:</label><br>
-         <input type="text" id="nome" name="nome" required><br><br>
+    <form action="#" method="POST">
+        <!-- Nome-->
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
 
-         <!-- E-mail-->
-         <label for="email">E-mail:</label><br>
-         <input type="email" id="email" name="email" required><br><br>
- 
-         <!-- Telefone-->
-         <label for="telefone">Telefone:</label><br>
-         <input type="tel" id="telefone" name="telefone" 
-         pattern="[0-9]{11}" placeholder="11999998888" required><br><br>
+        <!-- E-mail-->
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
 
-         <!-- Senha-->
-         <label for="senha">Senha:</label><br>
-         <input type="password" id="senha" name="senha"
-         pattern="{8}" placeholder="********" required><br><br>
+        <!-- Telefone-->
+        <label for="telefone">Telefone:</label><br>
+        <input type="tel" id="telefone" name="telefone" 
+        pattern="[0-9]{11}" placeholder="11999998888" required><br><br>
 
-         <!-- Botão-->
-         <button type="submit">Enviar</button>
+        <!-- Senha-->
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha"
+        pattern="^(?=.[a-z])(?=.[A-Z])(?=.\d)(?=.[\W_]){8-11}$"
+        placeholder="Senha de 8 a 11 caracteres com ao menos, uma letra minúscula,uma maiuscula,um número e um caractere especial" required<br><br>
+      <h5>A senha precisa ter entre 8-11 caracteres, com pelo menos uma letra maiuscula, uma minúscula, um número e um símbolo</h5><br><br>
+
+        <!-- Botão-->
+        <button type="submit">Enviar</button>
     </form>
 </body>
 </hmtl>
