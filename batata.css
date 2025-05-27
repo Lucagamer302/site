@@ -1,1 +1,55 @@
 
+body {
+    background-color: #000000;
+    color: #d1a3ff; /* tom claro de roxo para contraste */
+    font-family: Arial, sans-serif;
+    margin: 40px;
+}
+
+h1, h2, h5 {
+    color: #b366ff; /* roxo mais vibrante */
+}
+
+form {
+    background-color: #1a001a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 0 10px #b366ff;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #e0ccff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2d0033;
+    color: #ffffff;
+}
+
+input::placeholder {
+    color: #c5a3d9;
+}
+
+button {
+    background-color: #4c0080;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8000ff;
+}
