@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Cadastro Rápido</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profissional em Eletrotécnica</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Cadastro projeto técnologia para todos</h1>
-    <h2>Made by: batata</h2>
+  <header>
+    <nav class="navbar">
+      <h1>Eletrotécnica Pro</h1>
+      <ul class="nav-links">
+        <li><a href="#funcoes">Funções</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><button id="modoToggle">🌞</button></li>
+      </ul>
+    </nav>
+  </header>
 
-    <form action="#" method="POST">
-        <!-- Nome -->
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
+  <main>
+    <section id="funcoes">
+      <h2 class="funcoes">Funções do Profissional</h2>
+      <p class="func">O profissional em eletrotécnica atua na instalação, manutenção e operação de sistemas elétricos, redes de distribuição, painéis elétricos e sistemas de automação industrial, sempre seguindo normas técnicas e de segurança.</p>
+    </section>
 
-        <!-- E-mail -->
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
 
-        <!-- Telefone -->
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone" 
-        pattern="[0-9]{11}" placeholder="11999998888" required>
+    <section id="sobre">
+      <h2>Sobre o Profissional</h2>
+      <p>Me chamo João Silva, técnico em Eletrotécnica com mais de 10 anos de experiência no setor industrial. Especialista em sistemas de energia, comandos elétricos e automação.</p>
+    </section>
 
-        <!-- Senha -->
-        <label for="senha">Senha:</label>
-        <input type="password" id="senha" name="senha"
-        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,11}"
-        placeholder="Senha de 8 a 11 caracteres com letras, números e símbolo" required>
-        
-        <h5>A senha precisa ter entre 8 e 11 caracteres, com pelo menos uma letra maiúscula, uma minúscula, um número e um símbolo.</h5>
+    <section id="contato">
+      <h2>Entre em Contato</h2>
+      <p>Você pode me contatar pelo e-mail: <a href="mailto:joao@eletrotecnica.com">joao@eletrotecnica.com</a> ou pelo telefone (11) 99999-9999.</p>
+    </section>
+  </main>
 
-        <!-- Botão -->
-        <button type="submit">Enviar</button>
-    </form>
+  <script src="script.js"></script>
 </body>
 </html>
